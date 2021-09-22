@@ -25,6 +25,20 @@
     component: '@/pages/Todo/',
   },
   {
+    path: '/system',
+    name: '系统管理',
+    layout: true,
+    Component: '@/pages/System',
+    routes: [
+      {
+        name: '用户管理',
+        path: '/system/user',
+        icon: 'smile',
+        component: '@/pages/System/user/',
+      },
+    ],
+  },
+  {
     path: '/welcome',
     name: 'welcome',
     icon: 'smile',
